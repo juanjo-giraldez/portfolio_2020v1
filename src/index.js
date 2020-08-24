@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Home } from './components/Home';
+import { AppRouter } from './components/AppRouter';
 
 
 ReactDOM.render(
-  <Home />,
+  <AppRouter />,
   document.getElementById('root')
 );
 
