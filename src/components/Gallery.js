@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useProjects } from '../hooks/useProjects';
+import { ProjectItem } from './ProjectItem';
 
 export const Gallery = () => {
+
+     const project = useProjects()
+
     return (
         <div>
-            <h1>Esto son mis proyectos</h1>
-            <hr />
+            <h1>Estos   son mis proyectos</h1>
+           <div className="card-grid">
+               { project.map( (e) => 
+               ( < ProjectItem key={e.id} {...e}/> ))}
+           </div>
         </div>
     )
 }

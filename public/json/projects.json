@@ -1,0 +1,75 @@
+[
+    {
+        "id":"1",
+        "project":"Invaders-Attack-IRONHACK",
+        "img": "./img/Invaders-Attack-IRONHACK.png",
+        "technologies": ["Html5","Canvas","Css3","Javascript"],
+        "url": "https://github.com/juanjo-giraldez/Invaders-Attack-IRONHACK",
+        "demo": "https://juanjo-giraldez.github.io/Invaders-Attack-IRONHACK/"
+
+    },
+    {
+        "id": "2",
+        "project":"APP0CALYPSE",
+        "img": "./img/APP0CALYPSE.png",
+        "technologies": ["Html5","Express","Css3","Javascript", "Node.js", "Mongo-DB"],
+        "url": "https://github.com/Zoombiland/Madrid-Apokaliptika-Proyect",
+        "demo": "https://appokaliptik.herokuapp.com/"
+
+    },
+    {
+        "id": "3",
+        "project":"ShowHome",
+        "img": "./img/ShowHome.png",
+        "technologies": ["React","Express","Css3", "Node.js", "Mongo-DB", "Bootstrap"],
+        "url": "https://github.com/juanjo-giraldez/-ShowHome",
+        "demo": "https://showhome.herokuapp.com/"
+
+    },
+    {
+        "id": "4",
+        "project":"Gifs Search App",
+        "img": "./img/GifExpertApp.png",
+        "technologies": ["React","Css3", "Jest"],
+        "url": "https://github.com/juanjo-giraldez/Gifs_Search_App",
+        "demo": "https://juanjo-giraldez.github.io/Gifs_Search_App/"
+
+    },
+    {
+        "id": "5",
+        "project":"Kurso back",
+        "img": "./img/Kurso_back.png",
+        "technologies": ["APIs", "MongoDB", "Docker", "Jest", "Mongoose"],
+        "url": "https://gitlab.com/juanjogiraldez_kairosds/kurso_back/-/tree/master",
+        "demo": ""
+
+    },
+    {
+        "id": "6",
+        "project":"Project Back-Node.js-Front-Angular",
+        "img": "./img/angular.png",
+        "technologies": ["Angular", "Prime-ng", "Stencil.js", "APIs", "Jest", "TypeScript"],
+        "url": "https://gitlab.com/juanjogiraldez_kairosds/project_back-node.js-front-angular",
+        "demo": ""
+
+    },
+    {
+        "id": "7",
+        "project":"Project front vue",
+        "img": "./img/vue.png",
+        "technologies": ["Vue", "Prime-vue", "Stencil.js", "APIs", "Jest"],
+        "url": "https://gitlab.com/juanjogiraldez_kairosds/project_front-vue/-/tree/master",
+        "demo": ""
+
+    },
+    {
+        "id":"8",
+        "project":"Portfolio 2020v1",
+        "img": "./img/portfolio.png",
+        "technologies": ["React", "Css3", "Jest"],
+        "url": "https://github.com/juanjo-giraldez/portfolio_2020v1",
+        "demo": ""
+
+    }
+    
+]

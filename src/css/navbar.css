@@ -1,0 +1,21 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.item {
+    margin: 10px;
+    text-decoration-line: none;
+    color: #000000
+}
+
+.item:hover { 
+    color:#A9A9A9
+
+}
+
+
+

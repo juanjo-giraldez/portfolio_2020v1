@@ -1,0 +1,338 @@
+
+
+h1 {
+    
+    text-align: center;   
+}
+
+img {
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.tamaño {
+    font-size: 5rem;
+}
+
+.info {
+    display:flex;
+    margin: 3rem;
+    justify-content: space-around;;
+    align-items: center;;
+}
+
+.info_imagen {
+    padding: 2rem;
+}
+.info_p {
+    align-items: center;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info_p {
+        padding: .5rem;
+    }
+
+    .skill_tech {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.skill_tech {
+    display:flex;
+    margin: 3rem;
+    justify-content: space-around;
+    align-items: flex-start;;
+
+}
+
+ul {
+    min-width: 300px;
+}
+li {
+    position: relative;
+    list-style: none;
+    margin: 2rem 0;
+    font-weight: 500;
+
+}
+
+li:before {
+     content: '';
+     position: absolute;
+     top: calc(100% + 10px);
+     left: 0;
+     width: 100%;
+     height: 15px;
+     background-color: rgba(0, 0, 0, .5);
+     border-radius: 1000px;
+
+}
+
+li:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+
+}
+li.javascript:after {
+    animation-name: javascript;
+}
+
+@keyframes javascript {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+li.css3:after {
+    animation-name: css3;
+}
+
+@keyframes css3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+li.sass:after {
+    animation-name: sass;
+}
+
+@keyframes sass {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+li.react:after {
+    animation-name: react;
+}
+
+@keyframes react {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+li.angular:after {
+    animation-name: angular;
+}
+
+@keyframes angular {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+li.vue:after {
+    animation-name: vue;
+}
+
+@keyframes vue {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+li.bootstrap:after {
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+li.prime_vue:after {
+    animation-name: prime_vue;
+}
+
+@keyframes prime_vue {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+li.prime_ng:after {
+    animation-name: prime_ng;
+}
+
+@keyframes prime_ng {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+li.mongo_db:after {
+    animation-name: mongo_db;
+}
+
+@keyframes mongo_db {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+li.mongoose:after {
+    animation-name: mongoose;
+}
+
+@keyframes mongoose {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+li.apis:after {
+    animation-name: apis;
+}
+
+@keyframes apis {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+li.node:after {
+    animation-name: node;
+}
+
+@keyframes node {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+li.express:after {
+    animation-name: express;
+}
+
+@keyframes express {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+li.npm:after {
+    animation-name: npm;
+}
+
+@keyframes npm {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+li.git:after {
+    animation-name: git;
+}
+
+@keyframes git {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+li.docker:after {
+    animation-name: docker;
+}
+
+@keyframes docker {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
