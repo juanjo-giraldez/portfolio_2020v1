@@ -30,7 +30,7 @@
         "id": "4",
         "project":"Gifs Search App",
         "img": "./img/GifExpertApp.png",
-        "technologies": ["React","Css3", "Jest"],
+        "technologies": ["React","Css3", "Jest", "Hooks","APIs", "Javascript"],
         "url": "https://github.com/juanjo-giraldez/Gifs_Search_App",
         "demo": "https://juanjo-giraldez.github.io/Gifs_Search_App/"
 
@@ -57,7 +57,7 @@
         "id": "7",
         "project":"Project front vue",
         "img": "./img/vue.png",
-        "technologies": ["Vue", "Prime-vue", "Stencil.js", "APIs", "Jest"],
+        "technologies": ["Vue", "Prime-vue", "Stencil.js", "APIs", "Jest", "Cypress"],
         "url": "https://gitlab.com/juanjogiraldez_kairosds/project_front-vue/-/tree/master",
         "demo": ""
 
@@ -66,7 +66,7 @@
         "id":"8",
         "project":"Portfolio 2020v1",
         "img": "./img/portfolio.png",
-        "technologies": ["React", "Css3", "Jest"],
+        "technologies": ["React", "Css3", "Jest", "Hooks", "Javascript"],
         "url": "https://github.com/juanjo-giraldez/portfolio_2020v1",
         "demo": ""
 
