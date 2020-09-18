@@ -1,10 +1,7 @@
 import React from 'react';
-import '../css/About.css';
 import Background from '../img/Background.jpg';
 
 export const About = () => {
-
-
 
     return (
         <div>
@@ -13,14 +10,20 @@ export const About = () => {
             </div>
             <div className="info">
                 <img className="info_image" src={Background} alt="imagen" />
-                <div  className="contain_p">
+                <div className="contain_p">
                     <p>
-                        Mi interés por aprender me llevo hasta al sector del Web Developing.
-                        donde me inicie. Me propuse conocer las TICs , lanzandome a realizar
-                        un Bootcamp en Desarrollo web y poseer experiencia en proyectos.
-                       </p>
-                    <p>Dispuesto a emprender nuevas aventuras por descubrir.....¿me
-                    acompañas? .
+                        Entusiasta por el universo de la tecnología y por los nuevos avances; me propuse formarme
+                        en Web Development realizando un Bootcamp.
+                        </p>
+                    <p>
+                        Mi fin es alcanzar algún proyecto que me permita seguir avanzando en mis conocimientos
+                        en desarrollo y ponerlos en práctica.
+                        </p>
+                    <p>
+                        Mejorar a traves de desafios y progresar.
+                        </p>
+                    <p> Dispuesto a descubrir nuevos retos  para crecer .....¿me
+                    acompañas a emprender esta aventura? .
                      </p>
                     <a
                         href="https://drive.google.com/file/d/1L2V9ZH55eLbw0I-cqoM5sPwS-Kci8ISi/view?usp=sharing"
@@ -28,8 +31,6 @@ export const About = () => {
                     >resume</a>
                 </div>
             </div>
-
-
         </div >
 
     )

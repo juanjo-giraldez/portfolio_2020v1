@@ -1,0 +1,45 @@
+
+/* Media queries **/
+
+
+@mixin phone {
+    @media (max-width: #{$phone}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin  skill($name, $number)  {
+    &.#{$name}:after {
+        animation-name: #{$name};
+    }
+
+    @keyframes #{$name} {
+        from {
+            width: 0%;
+        }
+        to {
+            width: #{$number};
+        }
+    }
+}
+
+@mixin change {
+    &:hover { 
+        color: $gris2;
+    } 
+}
+
+@mixin changeLink {
+    &:hover { 
+        color: $blanco;
+        background-color: $gris3;
+    } 
+}
+
+

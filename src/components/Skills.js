@@ -1,24 +1,9 @@
 import React from 'react';
-import '../css/Skills.css';
 
 export const Skills = () => {
     return (
         <div>
             <section className="contain">
-                {/* <div>
-                    <h1>Habilidades tecnológicas</h1>
-                </div>
-                <div>
-
-                    { <div className="languages">
-                        <div>
-                            <h3>Lenguajes</h3>
-                            <ul>
-                                <li className="javascript">JAVASCRIPT</li>
-                            </ul>
-                        </div>
-                    </div> }
-                </div> */}
                 <div className="skill_tech">
                     <div>
                         <h3>FrontEnd</h3>

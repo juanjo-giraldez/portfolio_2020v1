@@ -3,8 +3,8 @@ import React from 'react'
 
 export const ProjectItem = ({ demo, id, img, project, technologies, url }) => {
 
-
     const result = technologies.map((e) => <h4 key={e}>{e}</h4>)
+    
     return (
         <>
             <div className="container">
@@ -12,7 +12,6 @@ export const ProjectItem = ({ demo, id, img, project, technologies, url }) => {
                     <div className="card_front">
                         <img src={img} alt={project} />
                         <h4> {project} </h4>
-
                     </div>
                     <div className="card_back">
                         <div className="place">

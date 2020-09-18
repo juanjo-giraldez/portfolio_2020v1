@@ -1,13 +1,9 @@
 import React from 'react';
-import '../css/contact.css';
 
 export const Contact = () => {
     return (
         <>
-
-
             <h1 className="title">Contacta conmigo</h1>
-
             <table className="contact">
                 <tbody>
                     <tr>
@@ -39,7 +35,6 @@ export const Contact = () => {
                     </tr>
                 </tbody>
             </table>
-
         </>
     )
 }

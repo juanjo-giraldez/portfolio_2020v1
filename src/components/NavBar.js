@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
-import '../css/navbar.css';
 import { useStateBar } from '../hooks/useStateBar';
 
 
@@ -20,7 +19,7 @@ export const NavBar = () => {
                     <NavLink className="item" onClick={reset} exact to="./contact" >Contacto</NavLink>
                     <NavLink className="item" onClick={reset} exact to="./skills" >Habilidades</NavLink>
                     <NavLink className="item" onClick={reset} exact to="./proyects"  >Proyectos</NavLink>
-                    <div  onClick={close}  ><svg className=" close cerrar" alt="close"></svg></div>
+                    <div  onClick={close}  ><svg className=" close " alt="close"></svg></div>
                 </div>
                 <div onClick={open}><svg className="menu" alt="menu"></svg></div>
             </div>

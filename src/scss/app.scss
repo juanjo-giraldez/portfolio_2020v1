@@ -1,0 +1,601 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $fuentePrincipal;    
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+// Component Navbar.js
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: .2rem;
+    flex-wrap: wrap;
+
+    @include tablet {
+       flex-direction: column;
+       justify-content: center;
+
+       div,svg {
+        margin-bottom: 10px;
+       }
+    }
+    @include phone {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .mobile {
+            position: fixed;
+            top: 0; 
+            right: -100%;
+            background-color: $gris3; 
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            z-index: 98;
+            transition: all .4s  ease-in;
+        }
+    
+        .toggle {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: $gris3;
+            width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            z-index: 99;
+            transition: all .4s  ease-out;
+        }  
+    }
+
+    
+    .logo {
+        background-image: url(../img/D20.svg);
+        background-repeat: no-repeat;
+        margin-left: 25px;
+        width: 70px;
+        height: 70px;
+        display: block;
+        justify-content: center;
+        align-content: center;
+        transition: transform 2s;
+        -webkit-transition: -webkit-transform 2s;
+
+        &:hover {
+            transform: rotate(360deg) translateZ(0);;
+            -webkit-transform: rotate(360deg) translateZ(0);
+        } 
+
+        @include tablet {
+            margin-left: 0;
+        }
+    }
+
+    .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    
+        .item {
+       
+            margin-right: 15px;
+            text-decoration-line: none;
+            color: $negro;
+            text-transform: uppercase;
+            opacity: 1;
+            position: relative;
+
+
+            &::before {
+                content: '';
+                display: block;
+                height: 3px;
+                background: $negro;
+                position: absolute;
+                bottom: -.75em;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transform-origin: left;
+                transition: transform ease-in-out 250ms;
+              }
+              
+              &:hover::before {
+                transform: scale(1,1);
+              }
+    
+            @include change;
+
+            @include phone {
+                
+                margin-left: 1rem;
+                padding-top: 3rem;
+                color: $blanco;
+                line-height: normal;
+
+                &:first-child {
+                    margin-top: 75px;
+                } 
+
+                &::before {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+     .menu,
+     .close {
+        cursor: pointer;
+        display: none;
+    
+        @include phone {
+            display: block;
+        }
+    } 
+    .menu {
+        background-image: url(../img/NewMenu.svg);
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px; 
+
+        @include phone {
+            color: $negro;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-image: url(../img/NewClose.svg);
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px; 
+    }    
+    
+}
+
+// Component Home.js
+
+.hero {
+
+    background-image: url(../img/Principal.JPG);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center center;
+    filter: grayscale(100%);
+
+    .contenedor {
+        display: grid;
+        height: 100vh;
+        align-content: center;
+
+        .contenido {
+            text-align: center;
+            color: $blanco;
+        }
+    }
+
+    .place_down{
+        margin-top:250px;
+        font-size: 3rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+       
+    }
+
+}
+
+// Component About.js
+
+.tamaño {  
+    
+    font-size: 3rem;
+
+    @include phone {
+        font-size: 2.5rem;
+    }
+    
+}
+
+.info {
+    display:flex;
+    margin: 3rem;
+    justify-content: space-around;;
+    align-items: center;
+
+    @include tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include phone {
+        margin: .5rem;
+
+        .contain_p {
+            max-width: 350px;
+        }
+    }
+
+    .info_imagen {
+        padding: 1rem;
+
+        @include phone {
+           
+        }
+    }
+
+    img {
+        max-width: 100%;
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        
+        @include tablet{
+            width: 100%;
+            height: 100%;
+        } 
+
+        @include phone {
+            margin-bottom: 20px; 
+        }
+    }
+
+    p {
+        margin-block-start: 0;
+        width: 100%;
+        align-items: center;
+        padding: 0 1rem ;
+        line-height: 1.8rem;
+
+        @include tablet {
+            font-size: 1.3rem;
+            padding: .5rem;
+        }
+
+        @include phone {
+            align-items: center;
+            font-size: 1.2rem;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding: 0;
+            margin-bottom: 1rem;
+            line-height: 2rem;
+        }
+    }
+
+    a{
+        color: $negro;
+        padding: .8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 2rem 5rem;
+        border: 1px solid $gris2;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+        @include changeLink;
+
+        @include phone {
+            color: $negro;
+            padding: 1rem;
+            text-decoration: none;
+            border: 1px solid $gris2;
+            margin: 1.5rem 0;
+
+            
+        }
+      }
+}
+// Component Contact.js
+
+
+
+.contact {
+    padding: 30px 100px;
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+
+    @include tablet {
+        margin-top: 4rem;
+    }
+
+    @include phone {
+        margin-top: 5rem;
+        padding:0;
+    }
+}
+
+table {
+    width: 100%;
+
+    @include tablet {
+        margin-left: 10px
+    }
+
+    @include phone {
+         margin: 0 auto;
+    }
+    
+    
+
+    th { 
+        text-align: left; 
+
+        @include tablet {
+            text-align: center; 
+            max-width: 300px;
+        }
+
+        @include phone {
+            margin-left: 15px;
+        }
+     }
+
+    a {
+        color: $gris3;
+        text-decoration: none;
+
+        @include change;
+    }
+
+}
+
+// Component Skills.js
+
+.skill_tech {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,  1fr));
+    gap: 20px;
+
+    @include tablet {
+        .contain {
+            width: 90%;
+        }
+    }
+
+    @include phone {
+
+        h3 {
+            font-size: 2rem;
+        }
+        .contain {
+            width: 80%;
+        }
+        :last-child{
+            margin-bottom: 2rem;
+        }
+    }
+
+    ul {
+        min-width: 300px;
+
+        @include tablet {
+            padding: 0 20px 0 20px;
+            
+        }
+
+        @include phone {
+            padding: 0 15px 0 15px;
+        }
+    }
+    li {
+        position: relative;
+        list-style: none;
+        margin: 2rem 0;
+        font-weight: 500;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: rgba(0, 0, 0, .5);
+            border-radius: 1000px;
+       
+       }
+
+       &:after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 1000px;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    @include skill("html", 80%);
+    @include skill("css3", 70%);
+    @include skill("sass", 60%);
+    @include skill("react", 75%);
+    @include skill("angular", 70%);
+    @include skill("vue", 65%);
+    @include skill("bootstrap", 60%);
+    @include skill("prime_vue", 60%);
+    @include skill("prime_ng", 60%);
+    @include skill("javascript", 80%);
+    @include skill("mongo_db", 70%);
+    @include skill("mongoose", 65%);
+    @include skill("apis", 70%);
+    @include skill("node", 75%);
+    @include skill("express", 70%);
+    @include skill("npm", 65%);
+    @include skill("git", 70%);
+    @include skill("docker", 65%);
+    
+    }
+
+}
+
+
+// Component Gallery.js
+
+.text-title {
+    margin-bottom: 2rem;
+}
+
+.card-grid {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,  1fr));
+    gap: 20px;
+
+    &:last-child {
+        margin-bottom: 4rem;
+
+        @include phone {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+  }
+
+// Component ProjectItem.js
+
+
+.card {
+    transition: 2s all ease-in-out;
+	  width: 100%;
+	  height: 100%;
+	  display: grid;
+	  transform-style: preserve-3d;
+	  grid-template-rows: 1fr;
+	  grid-template-columns: 1fr;
+    grid-template-areas: "overlap";
+
+    &:hover {
+        transform: RotateY(180deg);
+    }
+
+    .card_front  {
+
+        grid-area: overlap;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        backface-visibility: hidden;
+        filter: grayscale(90%);
+    
+        &:hover {
+            filter: grayscale(0%);
+        }
+    
+        p, h4 {
+            padding: 5px;
+            text-align: center;
+        }
+    
+        
+    
+        img {
+            width: 100%;
+            display: block;
+           }
+      
+      }
+
+      .card_back {
+        transform: RotateY(180deg);
+        grid-area: overlap;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        background-color: $gris3;
+        color: $blanco;
+        backface-visibility: hidden;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column ;
+        justify-content: center;
+        align-content: space-between;
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 15px;
+
+            @include phone {
+                font-size: 1.8rem;
+            }
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin: 10px;
+
+            @include phone {
+                font-size: 1.4rem;
+            }
+        }
+
+        a {
+            text-decoration-line: none;
+            color: $negro;
+    
+            &:hover {
+                color: $gris2;
+            }
+
+            @include phone {
+                padding: .2rem 1rem;
+                border: 1px solid $gris2;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+                @include changeLink;
+            }
+            
+        }
+
+        .card_info {
+            flex: 1 1 auto; 
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            background: $blanco;
+            border-bottom: 2px solid $blanco;
+             
+          }
+
+        .place {
+            height: 80%;
+          }
+
+        .tech {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+          }
+        
+      }
+
+
+    
+  }
+
