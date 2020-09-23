@@ -8,10 +8,10 @@ export const useStateBar = ({initialState}) => {
     const reset = () => setState(false)
     const close = () => setState(!state)
 
-    return [
+    return {
         state,
         open,
         reset,
         close
-]
+}
 }

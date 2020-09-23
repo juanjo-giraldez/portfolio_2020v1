@@ -310,6 +310,14 @@ nav {
 }
 // Component Contact.js
 
+.title {
+    font-size: 3rem;
+    
+    @include phone {
+        font-size: 2rem;
+    }
+
+}
 
 
 .contact {
@@ -317,6 +325,7 @@ nav {
     font-size: 1em;
     width: 80%;
     margin: 0 auto;
+
 
     @include tablet {
         margin-top: 4rem;
@@ -371,6 +380,10 @@ table {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px,  1fr));
     gap: 20px;
+
+    h3 {
+        font-size: 2.5rem;;
+    }
 
     @include tablet {
         .contain {

@@ -5,7 +5,7 @@ import { useStateBar } from '../hooks/useStateBar';
 
 export const NavBar = () => {
 
-    const [state, open, reset, close] = useStateBar(false)
+    const {state, open, reset, close} = useStateBar(false)
 
     return (
         <nav >

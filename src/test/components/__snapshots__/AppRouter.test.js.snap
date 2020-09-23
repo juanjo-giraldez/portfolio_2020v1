@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <About /> should show success Web Component, <AppRouter /> 1`] = `
+<BrowserRouter>
+  <NavBar />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/contact"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/skills"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/proyects"
+    />
+    <Redirect
+      to="/"
+    />
+  </Switch>
+</BrowserRouter>
+`;
