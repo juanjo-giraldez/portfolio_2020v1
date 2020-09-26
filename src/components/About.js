@@ -26,7 +26,7 @@ export const About = () => {
                     acompañas a emprender esta aventura? .
                      </p>
                     <a
-                        href="https://drive.google.com/file/d/1OVVUpOLg7PFwC8qAzlE-pTl2SYk_onZl/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1X0vzzEC3La9-LPOJPkdPHNFmZAKHAmMS/view?usp=sharing"
                         target="_blank" rel="noopener noreferrer"
                     >resume</a>
                 </div>
